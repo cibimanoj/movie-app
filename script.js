@@ -55,11 +55,5 @@ form.addEventListener("submit",(e)=>{
     const searchTerm=search.value
     if(searchTerm){
         getMovies(SEARCHAPI+searchTerm)
-    }else(searchTerm=="")
-    {
-        const div = document.createElement("div")
-        div.innerHTML=`<p class=errmsg>"No Records Found!"</p>`
-        document.body.appendChild(div)
-        form.reset()
     }
 })
